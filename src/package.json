@@ -1,7 +1,7 @@
 {
-  "name": "research-modify-pdf",
+  "name": "office-service-pdf",
   "version": "1.0.0",
-  "description": "Add footer on PDF with text and qrcode",
+  "description": "Service PDF for generating footer label, footer QRCode and draft label on SIDEBAR Universe.",
   "main": "server.js",
   "type": "module",
   "scripts": {
