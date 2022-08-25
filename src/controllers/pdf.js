@@ -7,6 +7,7 @@ import { drawTemplate2 } from './category/2.js';
 import { drawTemplate3 } from './category/3.js';
 import { drawTemplate4 } from './category/4.js';
 import { drawTemplate5 } from './category/5.js';
+import { drawTemplate6 } from './category/6.js';
 
 export const addFooterPdf = async (req, res) => {
     try {
@@ -60,6 +61,10 @@ export const addFooterPdf = async (req, res) => {
 
             case 5:
                 drawTemplate5(req, pages, arialRegularFont, QRCodeImagePng, QRCodeImageLogo, footerUrl)
+                break;
+
+            case 6:
+                drawTemplate6(req, pages, arialRegularFont, QRCodeImagePng, QRCodeImageLogo, footerUrl)
                 break;
 
             default:
