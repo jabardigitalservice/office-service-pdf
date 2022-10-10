@@ -4,24 +4,31 @@ export function drawText6(req, page, arialRegularFont, QRCodeImagePng, QRCodeIma
     // Draw a string of text diagonally across the each page
     page.drawText('Dokumen ini telah ditandatangani secara elektronik menggunakan sertifikat elektronik yang diterbitkan oleh Balai Sertifikasi', {
         x: 111,
-        y: 33,
+        y: 35,
         size: 8,
         font: arialRegularFont,
         color: rgb(0, 0, 0),
     })
-    page.drawText('Elektronik (BSrE) Badan Siber dan Sandi Negara. Dokumen digital yang asli dapat diperoleh dengan memindai QR Code atau', {
-        x: 105,
-        y: 23,
+    page.drawText('Elektronik (BSrE) Badan Siber dan Sandi Negara. Dokumen digital yang asli dapat diperoleh dengan memindai QR Code,', {
+        x: 115,
+        y: 25,
         size: 8,
         font: arialRegularFont,
         color: rgb(0, 0, 0),
     })
-    page.drawText('memasukkan kode pada Aplikasi NDE Pemerintah Daerah Provinsi Jawa Barat.', {
-        x: 185,
-        y: 13,
+    page.drawText('memasukkan kode pada Aplikasi NDE Pemerintah Daerah Provinsi Jawa Barat, atau mengakses tautan berikut', {
+        x: 130,
+        y: 15,
         size: 8,
         font: arialRegularFont,
         color: rgb(0, 0, 0),
+    })
+    page.drawText(footerUrl, {
+        x: 245,
+        y: 5,
+        size: 8,
+        font: arialRegularFont,
+        color: rgb(30/255, 136/255, 229/255),
     })
     // Draw the QRCode
     page.drawImage(QRCodeImagePng, {
